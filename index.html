@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polibag | Embalagens Plásticas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0d47a1;
+            --secondary-color: #1565c0;
+            --accent-color: #00bcd4;
+        }
+        .hero-section {
+        
+            background: linear-gradient(rgba(13, 71, 161, 0.85), rgba(21, 101, 192, 0.85)), url(http://www.polibag.com.br/images/empresa_05.jpg) no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 120px 0;
+        }
+        .btn-custom {
+            background-color: var(--accent-color);
+            color: #000;
+            font-weight: bold;
+            border: none;
+        }
+        .btn-custom:hover {
+            background-color: #00acc1;
+            color: #000;
+        }
+        .section-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+        .portfolio-img {
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .portfolio-img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="sticky-top shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <i class="bi bi-layers-half me-2 text-info"></i>
+                    <span>POLIBAG</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#servicos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section text-center">
+            <div class="container">
+                <h1 class="display-4 fw-bold mb-3">Soluções em Embalagens Plásticas</h1>
+                <p class="lead mb-4">Alta resistência e qualidade para o mercado industrial, comercial e distribuidor.</p>
+                <a href="#contato" class="btn btn-custom btn-lg px-4 shadow">Solicitar Orçamento</a>
+            </div>
+        </section>
+
+        <section id="sobre" class="py-5">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-md-6">
+                        <h2 class="section-title text-start mb-4">Quem Somos</h2>
+                        <p class="lead text-muted">A Polibag é especialista na fabricação de sacos plásticos de alta e baixa densidade.</p>
+                        <p>Atendemos indústrias, comércios e distribuidores com eficiência e compromisso. Nosso foco está na entrega de materiais com excelente micragem, garantindo soldas reforçadas e resistência ideal para o empacotamento automático ou manual, além de trabalharmos com polímeros de alto padrão.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1bJ_9x8dQ6A4YEeAT39TzPfioMfgNlR7liFXBALShsQ&s=10" class="img-fluid rounded shadow" alt="Produção de plásticos Polibag">
+                    </div>
+                </div>
+            </div>
+        </section>
+<section class="py-5 bg-dark text-white text-center">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <i class="bi bi-shield-check text-info display-5 mb-2"></i>
+                <h5 class="fw-bold">Alta Resistência</h5>
+                <p class="text-muted small mb-0">Plásticos testados para suportar altas cargas sem estiramento ou rupturas.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-clock-history text-info display-5 mb-2"></i>
+                <h5 class="fw-bold">Pontualidade</h5>
+                <p class="text-muted small mb-0">Garantia de entrega rápida para lotes industriais de qualquer escala.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-recycle text-info display-5 mb-2"></i>
+                <h5 class="fw-bold">Sustentabilidade</h5>
+                <p class="text-muted small mb-0">Processos focados na redução de resíduos e uso de polímeros recicláveis.</p>
+            </div>
+        </div>
+    </div>
+</section>
+        <section id="servicos" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center section-title mb-5">Nossos Serviços & Produtos</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm text-center p-3">
+                            <div class="card-body">
+                                <div class="text-primary fs-1 mb-3"><i class="bi bi-box-seam"></i></div>
+                                <h5 class="card-title fw-bold">Sacos de Lixo Industriais</h5>
+                                <p class="card-text text-muted">Material super reforçado de alta densidade, sob medida para suportar grandes volumes e descartes pesados sem romper.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm text-center p-3">
+                            <div class="card-body">
+                                <div class="text-primary fs-1 mb-3"><i class="bi bi-bag"></i></div>
+                                <h5 class="card-title fw-bold">Sacolas Alça Camiseta</h5>
+                                <p class="card-text text-muted">Ideais para supermercados, lojas e comércios em geral. Disponíveis em diversos tamanhos com excelente acabamento.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm text-center p-3">
+                            <div class="card-body">
+                                <div class="text-primary fs-1 mb-3"><i class="bi bi-arrow-repeat"></i></div>
+                                <h5 class="card-title fw-bold">Bobinas e Filmes</h5>
+                                <p class="card-text text-muted">Bobinas picotadas e filmes plásticos técnicos para proteção, revestimento e enfesto de produtos industriais.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="py-5">
+            <div class="container">
+                <h2 class="text-center section-title mb-4">Portfólio</h2>
+                <p class="text-center text-muted mb-5">Exemplos reais de materiais produzidos e lotes entregues aos nossos clientes.</p>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card border-0 shadow-sm overflow-hidden">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi0i9uclpqi1DyrreBVv8ZGs8euwlgK6TJZHnn6VDXyQ&s=10" class="img-top portfolio-img" alt="Bobinas plásticas Polibag">
+                            <div class="card-body"><p class="card-text text-center fw-medium">Bobinas Plásticas Industriais</p></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card border-0 shadow-sm overflow-hidden">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP6Amd0lvQJVUc15FZeCvM0Usw_YAC47trqfrqVOUgUA&s=10" class="img-top portfolio-img" alt="Sacolas plásticas Polibag">
+                            <div class="card-body"><p class="card-text text-center fw-medium">Sacolas de Alta e Baixa Densidade</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<section class="py-5">
+    <div class="container" style="max-width: 800px;">
+        <h2 class="text-center section-title mb-5">Perguntas Frequentes</h2>
+        <div class="accordion shadow-sm" id="accordionFAQ">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        Vocês fabricam sacos plásticos sob medida?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body text-muted">
+                        Sim! Desenvolvemos embalagens com larguras, comprimentos e micragens (espessuras) personalizadas de acordo com a necessidade da sua indústria ou comércio.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        Qual é o pedido mínimo para faturamento?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body text-muted">
+                        Por sermos fábrica, trabalhamos com quantidades mínimas por lote dependendo do tipo de produto (bobinas, sacolas ou sacos de lixo). Entre em contato para receber uma cotação exata.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section id="contato" class="py-5 bg-light">
+            <div class="container" style="max-width: 600px;">
+                <h2 class="text-center section-title mb-4">Contato</h2>
+                <p class="text-center text-muted mb-4">Solicite uma cotação de lote ou tire suas dúvidas através do formulário abaixo.</p>
+                <form id="formContato">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome Completo / Empresa</label>
+                        <input type="text" class="form-control" id="nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Especificações do Pedido (Tipo de saco, tamanho e quantidade)</label>
+                        <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+                    </div>
+                    
+                    <div id="feedbackForm" class="mb-3"></div>
+
+                    <button type="submit" class="btn btn-primary w-100 py-2 fw-bold">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-center text-md-start">
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <h5 class="fw-bold text-info mb-3">POLIBAG</h5>
+                <p class="text-white small">Soluções eficientes e duradouras em embalagens plásticas de alta e baixa densidade.</p>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <h5 class="fw-bold text-white mb-3">Atendimento</h5>
+                <p class="text-white small mb-1"><i class="bi bi-geo-alt-fill text-info me-2"></i> Av. Industrial, 1000 - Distrito Industrial</p>
+                <p class="text-white small mb-1"><i class="bi bi-telephone-fill text-info me-2"></i> (11) 4004-0000</p>
+                <p class="text-white small"><i class="bi bi-envelope-fill text-info me-2"></i> comercial@polibag.com.br</p>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <h5 class="fw-bold text-white mb-3">Siga-nos</h5>
+                <a href="#" class="text-white fs-4 me-3"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white fs-4 me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white fs-4"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+        <hr class="border-secondary my-4">
+        <div class="text-center">
+            <p class="mb-0 small">&copy; 2026 Polibag Embalagens. Todos os direitos reservados.</p>
+            <small class="text-muted" style="font-size: 0.75rem;">Projeto Acadêmico | 2º Período - Sistemas para Internet</small>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
